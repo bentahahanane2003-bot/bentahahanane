@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projet Robot Solaire - Hanane BENTAHA</title>
+    
+    <link rel="stylesheet" href="CSS.css"> 
+    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <style>
+        /* Styles spécifiques pour la mise en page du projet */
+        body {
+            background-color: #ffffff;
+            padding-top: 100px;
+        }
+
+        .project-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        .project-header {
+            margin-bottom: 50px;
+            border-bottom: 1px solid #f1f5f9;
+            padding-bottom: 30px;
+        }
+
+        .project-header h1 {
+            font-size: 2.5rem;
+            color: #1e293b;
+            margin-bottom: 15px;
+        }
+
+        .tech-tag {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background-color: #f8fafc;
+            color: #2563eb;
+            padding: 6px 16px;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 0.9rem;
+            border: 1px solid #e2e8f0;
+            margin-right: 10px;
+            margin-bottom: 10px;
+        }
+
+        .content-section {
+            margin-bottom: 60px;
+        }
+
+        .content-section h2 {
+            font-size: 1.8rem;
+            color: #1e293b;
+            margin-bottom: 25px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .content-section p {
+            font-size: 1.1rem;
+            color: #475569;
+            line-height: 1.8;
+            text-align: justify;
+        }
+
+        .specs-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            margin-top: 30px;
+        }
+
+        .spec-card {
+            background: #fbfcfe;
+            padding: 30px;
+            border-radius: 12px;
+            border-top: 4px solid #2563eb;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+        }
+
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            color: #64748b;
+            font-weight: 600;
+            margin-bottom: 30px;
+            transition: 0.3s;
+            text-decoration: none;
+        }
+
+        .back-link:hover {
+            color: #2563eb;
+            transform: translateX(-5px);
+        }
+
+        ul.tech-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        ul.tech-list li {
+            background: #f8fafc;
+            margin-bottom: 12px;
+            padding: 15px 20px;
+            border-radius: 8px;
+            border-left: 4px solid #cbd5e1;
+            color: #475569;
+        }
+    </style>
+</head>
+<body>
+
+    <header style="background: white; box-shadow: 0 2px 10px rgba(0,0,0,0.05); position: fixed; width: 100%; top: 0; z-index: 1000;">
+        <div class="logo-circle">
+            <img src="logo-fac.png" alt="Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="Portfolio.html#hero">Présentation</a></li>
+                <li><a href="Portfolio.html#skills">Compétences</a></li>
+                <li><a href="Portfolio.html#parcours">Parcours</a></li>
+                <li><a href="Portfolio.html#projets">Projets</a></li>
+                <li><a href="Portfolio.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="header-icons">
+            <a href="https://www.linkedin.com/in/hanane-bentaha-688979308/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        </div>
+    </header>
+
+    <main class="project-container">
+        <a href="Portfolio.html" class="back-link"><i class="fas fa-arrow-left"></i> Retour au Portfolio</a>
+
+        <section class="project-header">
+            <h1>Réalisation d'un Robot Nettoyeur de Panneaux Solaires</h1>
+            <div class="tags-container">
+                <span class="tech-tag"><i class="fas fa-microchip"></i> Arduino UNO</span>
+                <span class="tech-tag"><i class="fas fa-project-diagram"></i> EasyEDA (PCB)</span>
+                <span class="tech-tag"><i class="fas fa-cubes"></i> Tinkercad (3D)</span>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <h2><i class="fas fa-bullseye"></i> Objectif et Problématique</h2>
+            <p>
+                Le nettoyage des panneaux solaires est une tâche essentielle mais souvent fastidieuse, coûteuse et dangereuse pour la sécurité des personnes. L'accumulation de dépôts sur les surfaces photovoltaïques réduit significativement leur rendement énergétique. Ce projet de fin de cycle visait à concevoir une solution robotisée autonome capable de circuler sur les panneaux pour éliminer les résidus sans intervention humaine, garantissant ainsi une performance optimale et une durée de vie accrue des installations.
+            </p>
+        </section>
+
+        <section class="content-section">
+            <h2><i class="fas fa-cogs"></i> Architecture Matérielle</h2>
+            <div class="specs-grid">
+                <div class="spec-card">
+                    <h3><i class="fas fa-brain"></i> Unité de Commande</h3>
+                    <p>Le système est orchestré par une carte <strong>Arduino UNO</strong> (microcontrôleur ATmega328), programmée en <strong>C/C++</strong> pour gérer les entrées capteurs et les sorties actionneurs en temps réel.</p>
+                </div>
+                <div class="spec-card">
+                    <h3><i class="fas fa-eye"></i> Perception</h3>
+                    <p>Intégration de <strong>capteurs Infrarouges</strong> pour la détection intelligente d'obstacles et du vide. Cette perception permet au robot de sécuriser sa trajectoire en effectuant des demi-tours ou des arrêts automatiques.</p>
+                </div>
+                <div class="spec-card">
+                    <h3><i class="fas fa-tint"></i> Actionneurs</h3>
+                    <p>Utilisation d'un driver <strong>L298N</strong> pour piloter les moteurs de propulsion. Une <strong>pompe à eau</strong> intégrée assure la pulvérisation du liquide de nettoyage simultanément au déplacement du robot.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <h2><i class="fas fa-laptop-code"></i> Conception et Réalisation</h2>
+            <ul class="tech-list">
+                <li><strong>Électronique :</strong> Modélisation du schéma électrique et conception du circuit imprimé (PCB) personnalisé sous l'environnement <strong>EasyEDA</strong>.</li>
+                <li><strong>Modélisation 3D :</strong> Conception assistée par ordinateur du châssis et des supports de composants via <strong>Tinkercad</strong>.</li>
+                <li><strong>Développement :</strong> Programmation, tests et débogage de l'algorithme de balayage autonome sous <strong>Arduino IDE</strong>.</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer style="text-align: center; padding: 60px 0; color: #94a3b8; border-top: 1px solid #f1f5f9;">
+        <p>© 2026 Hanane BENTAHA - Projet Académique Licence (USTHB)</p>
+    </footer>
+
+</body>
+</html>

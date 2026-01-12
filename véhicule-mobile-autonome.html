@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projet Véhicule Autonome - Hanane BENTAHA</title>
+    <link rel="stylesheet" href="CSS.css"> 
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body { background-color: white; padding-top: 100px; }
+        .project-container { max-width: 1000px; margin: 0 auto; padding: 40px 20px; }
+        .project-header { margin-bottom: 50px; border-bottom: 1px solid #eee; padding-bottom: 30px; }
+        .tech-tag { background-color: #eff6ff; color: #1e40af; padding: 5px 15px; border-radius: 20px; font-weight: 600; font-size: 0.9rem; border: 1px solid #bfdbfe; margin-right: 10px; }
+        .content-section { margin-bottom: 60px; }
+        .content-section h2 { font-size: 1.8rem; color: #2563eb; margin-bottom: 25px; display: flex; align-items: center; gap: 10px; }
+        .content-section p { font-size: 1.1rem; color: #4b5563; line-height: 1.8; text-align: justify; }
+        .role-box { background: #f8fafc; border-left: 5px solid #2563eb; padding: 25px; border-radius: 8px; margin-top: 20px; }
+        .specs-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; list-style: none; padding: 0; margin-top: 20px; }
+        .specs-list li { background: #f1f5f9; padding: 12px; border-radius: 6px; font-weight: 500; font-size: 0.9rem; border: 1px solid #e2e8f0; }
+        .back-link { display: inline-flex; align-items: center; gap: 8px; color: #64748b; font-weight: 600; margin-bottom: 30px; transition: 0.3s; }
+        .back-link:hover { color: #2563eb; transform: translateX(-5px); }
+    </style>
+</head>
+<body>
+    <header style="background:white; box-shadow: 0 2px 10px rgba(0,0,0,0.1); position: fixed; width: 100%; top: 0; z-index: 1000;">
+        <div class="logo-circle"><img src="logo-fac.png" alt="Logo Évry"></div>
+    </header>
+
+    <main class="project-container">
+        <a href="Portfolio.html" class="back-link"><i class="fas fa-arrow-left"></i> Retour au Portfolio</a>
+
+        <section class="project-header">
+            <h1>Développement d'un Véhicule Autonome et Intelligent</h1>
+            <div class="tags-container">
+                <span class="tech-tag"><i class="fab fa-python"></i> Python / OpenCV</span>
+                <span class="tech-tag"><i class="fas fa-brain"></i> YOLOv11n (NCNN)</span>
+                <span class="tech-tag"><i class="fas fa-microchip"></i> Raspberry Pi 5</span>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <h2><i class="fas fa-project-diagram"></i> Architecture & Challenge</h2>
+            <p>
+                Ce projet consistait à concevoir un véhicule miniature capable de naviguer de façon autonome dans un environnement structuré. Le défi principal résidait dans l'intégration de plusieurs sous-systèmes (perception, détection d'objets, contrôle) sur une plateforme aux ressources limitées.
+            </p>
+            
+            <div class="role-box">
+                <h3><i class="fas fa-user-tag"></i> Mon Rôle Spécifique</h3>
+                <p>J'étais <strong>responsable de la détection d'objets</strong> via le modèle YOLO, de l'implémentation de la logique de réaction face aux événements détectés (arrêt au STOP, feux rouges) et de la <strong>gestion globale du projet</strong>.</p>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <h2><i class="fas fa-laptop-code"></i> Stack Technique</h2>
+            <ul class="specs-list">
+                <li><i class="fas fa-microchip"></i> Raspberry Pi 5 (8 Go RAM) </li>
+                <li><i class="fas fa-eye"></i> Caméra profondeur A200+ </li>
+                <li><i class="fas fa-robot"></i> Modèle IA YOLOv11n (NCNN) </li>
+                <li><i class="fas fa-project-diagram"></i> Contrôleur PID </li>
+                <li><i class="fas fa-wifi"></i> Protocole UDP (Monitoring)</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer style="text-align: center; padding: 40px; color: #888; border-top: 1px solid #eee;">
+        <p>© 2026 Hanane BENTAHA - Projet Master 1 E3A (Paris-Saclay)</p>
+    </footer>
+</body>
+</html>
